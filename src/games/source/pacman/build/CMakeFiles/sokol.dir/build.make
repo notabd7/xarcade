@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source
+CMAKE_SOURCE_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sokol.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/sokol.dir/progress.make
 include CMakeFiles/sokol.dir/flags.make
 
 CMakeFiles/sokol.dir/sokol/sokol.c.o: CMakeFiles/sokol.dir/flags.make
-CMakeFiles/sokol.dir/sokol/sokol.c.o: /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol.c
+CMakeFiles/sokol.dir/sokol/sokol.c.o: /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol.c
 CMakeFiles/sokol.dir/sokol/sokol.c.o: CMakeFiles/sokol.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sokol.dir/sokol/sokol.c.o"
-	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sokol.dir/sokol/sokol.c.o -MF CMakeFiles/sokol.dir/sokol/sokol.c.o.d -o CMakeFiles/sokol.dir/sokol/sokol.c.o -c /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sokol.dir/sokol/sokol.c.o"
+	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sokol.dir/sokol/sokol.c.o -MF CMakeFiles/sokol.dir/sokol/sokol.c.o.d -o CMakeFiles/sokol.dir/sokol/sokol.c.o -c /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol.c
 
 CMakeFiles/sokol.dir/sokol/sokol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sokol.dir/sokol/sokol.c.i"
-	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol.c > CMakeFiles/sokol.dir/sokol/sokol.c.i
+	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol.c > CMakeFiles/sokol.dir/sokol/sokol.c.i
 
 CMakeFiles/sokol.dir/sokol/sokol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sokol.dir/sokol/sokol.c.s"
-	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol.c -o CMakeFiles/sokol.dir/sokol/sokol.c.s
+	/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol.c -o CMakeFiles/sokol.dir/sokol/sokol.c.s
 
 # Object files for target sokol
 sokol_OBJECTS = \
@@ -93,7 +93,7 @@ sokol_EXTERNAL_OBJECTS =
 libsokol.a: CMakeFiles/sokol.dir/sokol/sokol.c.o
 libsokol.a: CMakeFiles/sokol.dir/build.make
 libsokol.a: CMakeFiles/sokol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsokol.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsokol.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/sokol.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sokol.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/sokol.dir/clean:
 .PHONY : CMakeFiles/sokol.dir/clean
 
 CMakeFiles/sokol.dir/depend:
-	cd /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles/sokol.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles/sokol.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/sokol.dir/depend
 

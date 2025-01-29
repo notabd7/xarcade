@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source
+CMAKE_SOURCE_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/pacman.dir/clean
 CMakeFiles/sokol.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokol.dir/build.make CMakeFiles/sokol.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokol.dir/build.make CMakeFiles/sokol.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles --progress-num=3,4 "Built target sokol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles --progress-num=3,4 "Built target sokol"
 .PHONY : CMakeFiles/sokol.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sokol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sokol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles 0
 .PHONY : CMakeFiles/sokol.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/sokol.dir/clean:
 CMakeFiles/pacman.dir/all: CMakeFiles/sokol.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman.dir/build.make CMakeFiles/pacman.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman.dir/build.make CMakeFiles/pacman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles --progress-num=1,2 "Built target pacman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles --progress-num=1,2 "Built target pacman"
 .PHONY : CMakeFiles/pacman.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pacman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pacman.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/build/CMakeFiles 0
 .PHONY : CMakeFiles/pacman.dir/rule
 
 # Convenience name for target.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pacman.dir/pacman.c.o"
   "CMakeFiles/pacman.dir/pacman.c.o.d"
-  "pacman.html"
+  "pacman.js"
   "pacman.pdb"
 )
 

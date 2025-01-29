@@ -1,6 +1,6 @@
 CMakeFiles/sokol.dir/sokol/sokol.c.o: \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol.c \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol_app.h \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol.c \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol_app.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/lib/clang/20/include/stddef.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/lib/clang/20/include/__stddef_header_macro.h \
@@ -45,11 +45,11 @@ CMakeFiles/sokol.dir/sokol/sokol.c.o: \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol_gfx.h \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol_gfx.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/lib/clang/20/include/float.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/float.h \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol_audio.h \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol_glue.h \
-  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/sokol/sokol_log.h \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol_audio.h \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol_glue.h \
+  /mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/sokol/sokol_log.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
   /mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h

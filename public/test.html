@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pacman Test</title>
+    <style>
+        body { 
+            margin: 0;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        console.log('Starting to initialize...');
+        var Module = {
+            canvas: document.getElementById('canvas'),
+            onRuntimeInitialized: function() {
+                console.log('Game initialized!');
+            },
+            print: function(text) {
+                console.log('Game output:', text);
+            },
+            printErr: function(text) {
+                console.error('Game error:', text);
+            }
+        };
+    </script>
+    <script src="/games/pacman.js"></script>
+</body>
+</html>

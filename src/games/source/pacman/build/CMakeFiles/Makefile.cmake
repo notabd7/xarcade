@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
-  "/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/CMakeLists.txt"
+  "/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/pacman/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"

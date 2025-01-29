@@ -41,10 +41,25 @@ else()
     add_executable(pacman pacman.c)
 endif()
 target_link_libraries(pacman sokol)
+# if (CMAKE_SYSTEM_NAME STREQUAL Emscripten)
+#     set(CMAKE_EXECUTABLE_SUFFIX ".html")
+#     target_link_options(pacman PUBLIC --shell-file ../sokol/shell.html)
+#     target_link_options(pacman PUBLIC -sUSE_WEBGL2=1 -sNO_FILESYSTEM=1 -sASSERTIONS=0 -sMALLOC=emmalloc --closure=1)
+# endif()
 if (CMAKE_SYSTEM_NAME STREQUAL Emscripten)
-    set(CMAKE_EXECUTABLE_SUFFIX ".html")
-    target_link_options(pacman PUBLIC --shell-file ../sokol/shell.html)
-    target_link_options(pacman PUBLIC -sUSE_WEBGL2=1 -sNO_FILESYSTEM=1 -sASSERTIONS=0 -sMALLOC=emmalloc --closure=1)
+    set(CMAKE_EXECUTABLE_SUFFIX ".js")
+    target_link_options(pacman PUBLIC 
+        -sUSE_WEBGL2=1 
+        -sNO_FILESYSTEM=1 
+        -sASSERTIONS=1
+        -sMALLOC=emmalloc 
+        -sMODULARIZE=1 
+        -sEXPORT_NAME='createPacmanGame'
+        -sEXPORT_ES6=1
+        -sUSE_ES6_IMPORT_META=0
+        -sENVIRONMENT='web'
+        -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']
+        --no-entry)
 endif()
 if (MSVC)
     target_compile_options(pacman PUBLIC /W3)

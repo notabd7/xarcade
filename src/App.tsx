@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import { Trophy } from "lucide-react"
+import GamePage from "./components/GamePage"
 
 const App = () => {
   return (
@@ -26,7 +27,11 @@ const App = () => {
 
 const GameGrid = () => {
   const games = [
-    { id: "game1", title: "Game 1", gif: "/game1.gif" },
+    { 
+      id: "pacman", 
+      title: "Pacman", 
+      gif: "/placeholder.svg"  // Replace with actual pacman preview gif when you have one
+    },
     { id: "game2", title: "Game 2", gif: "/game2.gif" },
   ]
 
@@ -44,13 +49,14 @@ const GameGrid = () => {
               <h3 className="text-xl neon-text">{game.title}</h3>
             </div>
             <div className="aspect-video bg-purple-900">
-              <img src={game.gif || "/placeholder.svg"} alt={game.title} className="w-full h-full object-cover" />
+              <img src={game.gif} alt={game.title} className="w-full h-full object-cover" />
             </div>
           </Link>
         ))}
       </div>
     </div>
   )
+
 }
 
 const Leaderboard = () => {
@@ -65,14 +71,6 @@ const Leaderboard = () => {
   )
 }
 
-const GamePage = () => {
-  return (
-    <div className="bg-gray-900 p-6 rounded-lg neon-border">
-      <h2 className="text-2xl mb-6 neon-text">Game</h2>
-      <div className="aspect-video bg-purple-900">{/* Game canvas will be mounted here */}</div>
-    </div>
-  )
-}
 
 export default App
 
