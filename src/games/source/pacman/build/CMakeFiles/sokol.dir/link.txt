@@ -1,0 +1,2 @@
+/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emar qc libsokol.a CMakeFiles/sokol.dir/sokol/sokol.c.o
+/mnt/c/Users/Drexe/abdullah/emsdk/upstream/emscripten/emranlib libsokol.a

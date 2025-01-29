@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "KarmaticArcade";
+  src: url("./fonts/KarmaticArcade-6Yrp1.ttf") format("truetype");
+}
+
+:root {
+  --purple-glow: 0 0 5px #8b5cf6, 0 0 10px #8b5cf6, 0 0 15px #8b5cf6;
+}
+
+body {
+  background-color: #000;
+  color: #8b5cf6;
+  font-family: "KarmaticArcade", sans-serif;
+}
+
+.neon-text {
+  text-shadow: var(--purple-glow);
+}
+
+.neon-border {
+  box-shadow: var(--purple-glow);
+}
+
+.game-card {
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--purple-glow);
+}
+
+/* Scanline effect */
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Pixel art icon styles */
+.pixel-icon {
+  image-rendering: pixelated;
+  width: 32px;
+  height: 32px;
+}
+

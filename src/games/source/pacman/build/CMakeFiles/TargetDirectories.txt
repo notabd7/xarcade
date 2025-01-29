@@ -1,0 +1,4 @@
+/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles/sokol.dir
+/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles/pacman.dir
+/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Drexe/abdullah/xarcade/src/games/source/build/CMakeFiles/rebuild_cache.dir
